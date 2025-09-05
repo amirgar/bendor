@@ -1,0 +1,59 @@
+:root {
+  --font-primary: 'Khmer MN', serif;
+  --color-text: #000000;
+  --color-text-soft: rgba(0, 0, 0, 0.8);
+  --color-text-softer: rgba(0, 0, 0, 0.7);
+  --color-text-dark: #000000;
+  --color-dark: #2b2b2b;
+  --color-light: #ffffff;
+  --color-border: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: var(--color-light);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+  .section-title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+}
